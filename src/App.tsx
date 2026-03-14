@@ -108,7 +108,7 @@ function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative w-[80%] mx-auto"
           >
             <div className="aspect-[4/5] rounded-2xl overflow-hidden relative">
               <img 
@@ -137,7 +137,7 @@ function Hero() {
 
 function About() {
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="pt-24 pb-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -156,12 +156,6 @@ function About() {
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               Whether you are a writer weaving tales, a photographer capturing fleeting moments, or a social media creator building communities, your work is a core memory that deserves to be preserved and shared.
             </p>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: `${colors.teal}20`, color: colors.teal }}>
-                <span className="font-bold text-xl">10k+</span>
-              </div>
-              <span className="text-gray-900 font-medium">Creators Worldwide</span>
-            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -209,10 +203,10 @@ function Mediums() {
   ];
 
   return (
-    <section id="mediums" className="py-24 bg-white">
+    <section id="mediums" className="pt-12 pb-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-sm font-bold tracking-widest uppercase mb-3" style={{ color: colors.gray }}>Our Mediums</h2>
+          <h2 className="text-sm font-bold tracking-widest uppercase mb-3" style={{ color: colors.teal }}>Our Mediums</h2>
           <h3 className="text-4xl font-serif font-bold text-gray-900 mb-6">Every form of expression matters</h3>
           <p className="text-gray-600 text-lg">
             We provide the platform, you provide the vision. Explore the different ways our community brings their core memories to life.
@@ -248,10 +242,10 @@ function Mediums() {
 
 function Gallery() {
   const images = [
-    "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=1974&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1455390582262-044cdead2708?q=80&w=1973&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?q=80&w=1974&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop"
+    "https://picsum.photos/seed/gallery1/1920/1080",
+    "https://picsum.photos/seed/gallery2/1920/1080",
+    "https://picsum.photos/seed/gallery3/1920/1080",
+    "https://picsum.photos/seed/gallery4/1920/1080"
   ];
 
   return (
@@ -267,7 +261,7 @@ function Gallery() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {images.map((src, index) => (
             <motion.div 
               key={index}
@@ -275,7 +269,7 @@ function Gallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`rounded-2xl overflow-hidden relative group ${index === 0 || index === 3 ? 'md:aspect-[4/3]' : 'md:aspect-square'}`}
+              className="rounded-2xl overflow-hidden relative group aspect-square"
             >
               <img 
                 src={src} 
@@ -303,12 +297,12 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
             <img 
-              src="/logo.png" 
+              src="/footer-logo.png" 
               alt="The Core Memory Project Logo" 
-              className="max-h-16 w-auto object-contain mb-6" 
+              className="max-h-32 w-auto object-contain mb-6" 
             />
             <p className="text-gray-500 max-w-sm mb-8">
-              A space for creatives to express themselves in any form of creative arts.
+              A space for creatives to freely express themselves in any form.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-50 text-gray-600 hover:bg-gray-100 transition-colors">
