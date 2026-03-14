@@ -26,7 +26,7 @@ function Navbar() {
             <img 
               src="/logo.png" 
               alt="The Core Memory Project Logo" 
-              className="max-h-12 w-auto object-contain" 
+              className="max-h-[72px] w-auto object-contain" 
             />
           </div>
           
