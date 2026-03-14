@@ -308,7 +308,7 @@ function Footer() {
               className="max-h-16 w-auto object-contain mb-6" 
             />
             <p className="text-gray-500 max-w-sm mb-8">
-              A space for creatives to express themselves in any form of creative arts. Simple, professional, yet impactful.
+              A space for creatives to express themselves in any form of creative arts.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-50 text-gray-600 hover:bg-gray-100 transition-colors">
