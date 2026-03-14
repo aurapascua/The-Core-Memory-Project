@@ -24,7 +24,7 @@ function Navbar() {
         <div className="flex justify-between h-24">
           <div className="flex items-center">
             <img 
-              src="/logo.png" 
+              src="./logo.png" 
               alt="The Core Memory Project Logo" 
               className="max-h-[72px] w-auto object-contain" 
             />
@@ -297,7 +297,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
             <img 
-              src="/footer-logo.png" 
+              src="./footer-logo.png" 
               alt="The Core Memory Project Logo" 
               className="max-h-32 w-auto object-contain mb-6" 
             />
